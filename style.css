@@ -50,3 +50,59 @@ body{color:#38271b;background:radial-gradient(ellipse at 18% 8%,#f8ebcc 0%,trans
 footer{border-top-color:#b99b7077}
 @media(max-width:650px){.hero-art{display:none}.card{background:#f0dfbb}}
 
+/* Crazystuff: rosy boutique colors with sketchbook cats */
+:root{--ink:#4d332a;--paper:#fff0e4;--muted:#806358;--line:#e7b8ac;--acid:#f36d9f;--rust:#d47d69;--panel:#ffe1d5;--cream:#fff2e6}
+html{background:#ffd2c9}
+body{color:#4d332a;background:radial-gradient(ellipse at 50% 26%,#fff2e6 0%,transparent 58%),linear-gradient(180deg,#ffe9dc 0%,#ffd0c8 70%,#f8d5ee 100%)}
+.grain{opacity:.045;mix-blend-mode:multiply}
+.topbar{background:#f86fa4;color:#60343a;border-bottom:1px solid #ec91aa}
+.wordmark{color:#60343a}
+.seal{border-color:#793e4a;color:#793e4a;box-shadow:0 0 12px #793e4a22}
+.status-dot{background:#fff0d9;box-shadow:0 0 9px #fff7d988}
+.eyebrow,.trail-num,.success{color:#bd5c73}
+.title em{color:#d9788f;text-shadow:none}
+.lede{color:#704e43}
+.muted{color:#806358}
+.card,.modal-box{background:linear-gradient(145deg,#fff4e7,#ffe2d5);border-color:#e6b6a5;color:#4d332a;box-shadow:0 18px 50px #7c403021}
+.hero-art{border-color:#e9b2a8;background:radial-gradient(circle at 50% 45%,#ffc7c3,#f6aac3 78%)}
+.hero-art:before,.hero-art:after{border-color:#a9536455}
+.hourglass{color:#bd5c73;text-shadow:none}
+.button{background:#f36d9f;color:#57353b}
+.button.secondary{border-color:#bd8b76;color:#65483b}
+.button:focus-visible,input:focus-visible,.tile:focus-visible,.cell:focus-visible{outline-color:#c55778}
+.progress{background:#eed0bd}.progress span{background:#ed6b98}
+.smallprint{color:#987466}
+.cell{background:#fff0df;color:#51382c;border-color:#d5b297}
+.cell.given{color:#fff5e8;background:#a86351}
+.cell.correct{background:#f3d2bd}
+.scrabble-board{background:#bd8067;border-color:#bd8067}
+.board-square{background:#fff0db;color:#654439}
+.board-square.tw{background:#fa78a6;color:#fff8e9}
+.board-square.dw{background:#ffc5b6;color:#683e3c}
+.board-square.tl{background:#e3b9e7;color:#594252}
+.board-square.dl{background:#e6ef93;color:#514d37}
+.scrabble-board .slot{background:#fff2d9;color:#51382c;border-color:#cf9770;box-shadow:0 2px 0 #a76d59}
+.scrabble-board .slot.space{background:#ead5e7;border-color:#bd97b7}
+.tile{background:#fff0d5;color:#51382c;border-color:#d6af7f;box-shadow:0 3px 0 #b28066}
+.slot{border-color:#d5b297;color:#b2526d}
+.input{background:#fff7e9;border-color:#ddb7a1;color:#4d332a}
+.folder{background:#ffead6;border-color:#ddb7a1;color:#4d332a}
+.folder small{color:#806358}
+.trail-item{background:#fff0df;border-color:#e3b9a4}
+.trail-item p{color:#76574a}
+.note-card{border-left-color:#ed6b98;background:linear-gradient(110deg,#f9d9e8,#ffe3d3);color:#563d35}
+.hint-label{color:#76574a}
+.image-hint{border-color:#e1ab9d;box-shadow:0 6px 20px #75432822}
+.modal{background:#573a3188}
+.modal-box{border-color:#e1b6a5}
+.toast{background:#fff0df;color:#4d332a;box-shadow:0 8px 28px #78412e33}
+footer{border-top-color:#d9acc477;background:#e8c2eb;color:#684d58}
+.hint-scene{position:relative;width:min(100%,350px);min-height:150px;margin:20px 0 5px;display:flex;align-items:center;justify-content:center}
+.hint-scene .image-hint{width:150px;margin:0;border-radius:8px}
+.cat-doodle{position:absolute;display:block;width:48px;color:#794d4d;transform:rotate(var(--turn,0deg));pointer-events:none;opacity:.88}
+.cat-doodle svg{display:block;width:100%;height:auto;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.hero-art .cat-doodle{width:100px;color:#824858}
+.magic-hint{position:relative;min-height:64px;margin:14px 0 2px}
+.magic-hint .cat-doodle{width:42px}
+@media(max-width:650px){.hero-art{display:none}.card{background:#fff0df}.hint-scene{margin-inline:auto}.title{font-size:clamp(40px,11vw,58px)}.topbar{padding:16px 18px}}
+
