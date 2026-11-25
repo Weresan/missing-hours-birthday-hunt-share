@@ -141,3 +141,8 @@ footer{border-top:0;background:#f8d5ee;color:#684d58}
 .coordinate-input{flex:1;min-width:0;font-family:'DM Mono',monospace;background:#fffaf2;color:#563d35;border-color:#d9b798;letter-spacing:0}
 .copy-row .button{min-width:170px}
 @media(max-width:560px){.copy-row{flex-direction:column}.copy-row .button{width:100%}.coordinate-card{padding:15px}}
+
+.sudoku.six{grid-template-columns:repeat(6,minmax(0,1fr));width:min(100%,420px);border:2px solid #b18d75}
+.sudoku.six .cell{font-size:clamp(20px,5vw,32px)}
+.sudoku.six .cell:nth-child(n+7):nth-child(-n+12),.sudoku.six .cell:nth-child(n+19):nth-child(-n+24){border-bottom:2px solid #b18d75}
+.sudoku.six .cell.given{font-weight:700;background:#f4dfd2}
