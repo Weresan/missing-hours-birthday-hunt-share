@@ -124,4 +124,6 @@ footer{border-top-color:#d9acc477;background:#e8c2eb;color:#684d58}
 /* Wider, flatter capsule shape from the Get Started reference */
 .button{border-radius:9999px;min-width:170px;min-height:52px;padding:16px 32px}
 @media(max-width:650px){.actions .button{flex:1 1 170px}}
+.button{min-width:210px;min-height:56px;padding:16px 36px}
+@media(max-width:650px){.button{min-width:190px;min-height:54px}}
 
