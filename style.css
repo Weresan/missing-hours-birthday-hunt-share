@@ -116,4 +116,8 @@ footer{border-top-color:#d9acc477;background:#e8c2eb;color:#684d58}
 .signoff{margin:10px 0 0;color:#764b45;font:italic 20px 'Playfair Display',Georgia,serif}
 .final-cats{position:relative;width:min(100%,230px);height:145px;margin:12px 0 0}
 .final-cats .cat-doodle{width:56px}
+.case-controls{display:flex;align-items:center;gap:18px}
+.restart-link{border:0;background:transparent;color:inherit;font:inherit;letter-spacing:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:8px 0;opacity:.85}
+.restart-link:hover{opacity:1;color:#bd5c73}
+@media(max-width:420px){.case-controls{gap:10px}.restart-link{font-size:10px}}
 
