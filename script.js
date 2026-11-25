@@ -2,7 +2,7 @@ const app=document.querySelector('#app');
 const startOverButton=document.querySelector('#startOver');
 const homeLink=document.querySelector('#homeLink');
 const KEY='missing-hours-progress-v5';
-let state={screen:'intro',name:'',username:'',tries:0,code:'',word:[],sudoku:{}};
+let state={screen:'intro',name:'',username:'',tries:0,code:'',word:[],rackOrder:[],sudoku:{}};
 try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(saved&&typeof saved==='object')state={...state,...saved}}catch{}
 if(!['intro','sudoku','scrabble','login','folder','locked','hunt','book','studio','closed'].includes(state.screen))state.screen='intro';
 if(!state.sudoku||typeof state.sudoku!=='object')state.sudoku={};
@@ -12,7 +12,7 @@ state.word=state.word.map(v=>Number.isInteger(v)?v:undefined);
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch{}};
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function go(screen){state.screen=screen;save();render();window.scrollTo({top:0,behavior:'smooth'})}
-function resetHunt(){localStorage.removeItem(KEY);state={screen:'intro',name:'',username:'',tries:0,code:'',word:[],sudoku:{}};render();window.scrollTo({top:0,behavior:'smooth'})}
+function resetHunt(){localStorage.removeItem(KEY);state={screen:'intro',name:'',username:'',tries:0,code:'',word:[],rackOrder:[],sudoku:{}};render();window.scrollTo({top:0,behavior:'smooth'})}
 homeLink.onclick=e=>{e.preventDefault();resetHunt()};
 startOverButton.onclick=()=>{if(!window.confirm('Start from the beginning? Your saved place in the hunt will be cleared.'))return;resetHunt()};
 const FINAL_FILE_DIGEST='fcd22f0899f3ee64f5eeaecf34b8e57073a62decb51957147ce626d4d3059d12';
