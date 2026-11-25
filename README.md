@@ -1,7 +1,7 @@
-# The Missing Hours — Share Copy
+# Crazystuff Birthday Treasure Hunt
 
-A phone-friendly birthday mystery with an aged-paper storybook look. Personalized real-world directions are delivered in handwritten notes.
+A phone-friendly birthday mystery in a playful pink, peach, and lilac palette. Personalized directions are delivered in handwritten notes.
 
-Open `index.html` in a browser. Keep the files in this folder together. Progress is stored in that browser.
+Open `index.html` in a browser and keep the files together. Progress is stored in that browser.
 
 The static password checks are for the game flow only, not account security.
