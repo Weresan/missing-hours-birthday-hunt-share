@@ -146,3 +146,11 @@ footer{border-top:0;background:#f8d5ee;color:#684d58}
 .sudoku.six .cell{font-size:clamp(20px,5vw,32px)}
 .sudoku.six .cell:nth-child(n+7):nth-child(-n+12),.sudoku.six .cell:nth-child(n+19):nth-child(-n+24){border-bottom:2px solid #b18d75}
 .sudoku.six .cell.given{font-weight:700;background:#f4dfd2}
+
+.choice-grid{display:flex;gap:14px;flex-wrap:wrap;margin:26px 0 0}
+.choice-grid .button{flex:1 1 180px;min-height:60px}
+.choice-message{min-height:1.5em;margin:14px 0 0;color:#be684c;font:italic 22px 'Playfair Display',Georgia,serif}
+.sidequest-note{max-width:580px}
+.sidequest-note p{margin:0 0 12px}
+.sidequest-note p:last-child{margin-bottom:0}
+@media(max-width:560px){.choice-grid{flex-direction:column}.choice-grid .button{width:100%;flex:1 1 auto}}
