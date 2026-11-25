@@ -127,3 +127,11 @@ footer{border-top-color:#d9acc477;background:#e8c2eb;color:#684d58}
 .button{min-width:210px;min-height:56px;padding:16px 36px}
 @media(max-width:650px){.button{min-width:190px;min-height:54px}}
 
+/* Scalloped hem and editorial multicolor word accents */
+.scallop-divider{height:30px;margin-top:-36px;position:relative;z-index:1;background-image:linear-gradient(#ffd0c8 0 8px,transparent 8px),radial-gradient(circle at 54px -24px,#ffd0c8 53px,transparent 54px);background-size:auto,108px 30px;background-repeat:repeat-x}
+footer{border-top:0;background:#f8d5ee;color:#684d58}
+.highlight-rose{color:#c35475;font-style:italic}
+.highlight-coral{color:#be684c;font-style:italic}
+.highlight-olive{color:#6c7a43;font-style:italic}
+.highlight-lilac{color:#9165aa;font-style:italic}
+
