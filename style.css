@@ -121,3 +121,7 @@ footer{border-top-color:#d9acc477;background:#e8c2eb;color:#684d58}
 .restart-link:hover{opacity:1;color:#bd5c73}
 @media(max-width:420px){.case-controls{gap:10px}.restart-link{font-size:10px}}
 
+/* Wider, flatter capsule shape from the Get Started reference */
+.button{border-radius:9999px;min-width:170px;min-height:52px;padding:16px 32px}
+@media(max-width:650px){.actions .button{flex:1 1 170px}}
+
