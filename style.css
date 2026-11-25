@@ -106,3 +106,14 @@ footer{border-top-color:#d9acc477;background:#e8c2eb;color:#684d58}
 .magic-hint .cat-doodle{width:42px}
 @media(max-width:650px){.hero-art{display:none}.card{background:#fff0df}.hint-scene{margin-inline:auto}.title{font-size:clamp(40px,11vw,58px)}.topbar{padding:16px 18px}}
 
+/* Playful pill buttons inspired by the Get Started reference */
+.button{border-radius:999px;padding:14px 28px;box-shadow:0 4px 0 #bd547c33;min-height:46px}
+.button:hover{transform:translateY(-2px) scale(1.02);filter:saturate(1.06)}
+.button.secondary{border-radius:999px}
+.venue-mark{width:min(100%,178px);margin:22px 0;padding:8px;background:#fff3e5;border:1px solid #e8b5a3;border-radius:18px;box-shadow:0 8px 22px #8a4c3022}
+.venue-mark img{display:block;width:100%;height:auto;border-radius:10px}
+.venue-clue{max-width:560px}
+.signoff{margin:10px 0 0;color:#764b45;font:italic 20px 'Playfair Display',Georgia,serif}
+.final-cats{position:relative;width:min(100%,230px);height:145px;margin:12px 0 0}
+.final-cats .cat-doodle{width:56px}
+
