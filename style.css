@@ -135,3 +135,9 @@ footer{border-top:0;background:#f8d5ee;color:#684d58}
 .highlight-olive{color:#6c7a43;font-style:italic}
 .highlight-lilac{color:#9165aa;font-style:italic}
 
+
+.coordinate-card{display:grid;gap:10px;max-width:600px;margin:24px 0;padding:18px;background:#fff1e5;border:1px solid #e7c5ab;border-radius:12px;box-shadow:0 8px 22px #8a4c3016}
+.copy-row{display:flex;gap:10px;align-items:stretch}
+.coordinate-input{flex:1;min-width:0;font-family:'DM Mono',monospace;background:#fffaf2;color:#563d35;border-color:#d9b798;letter-spacing:0}
+.copy-row .button{min-width:170px}
+@media(max-width:560px){.copy-row{flex-direction:column}.copy-row .button{width:100%}.coordinate-card{padding:15px}}
