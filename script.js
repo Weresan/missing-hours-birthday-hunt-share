@@ -1,5 +1,6 @@
 const app=document.querySelector('#app');
-const startOverButton=document.querySelector('#startOver');\nconst homeLink=document.querySelector('#homeLink');
+const startOverButton=document.querySelector('#startOver');
+const homeLink=document.querySelector('#homeLink');
 const KEY='missing-hours-progress-v5';
 let state={screen:'intro',name:'',username:'',tries:0,code:'',word:[],sudoku:{}};
 try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(saved&&typeof saved==='object')state={...state,...saved}}catch{}
@@ -11,7 +12,9 @@ state.word=state.word.map(v=>Number.isInteger(v)?v:undefined);
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch{}};
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function go(screen){state.screen=screen;save();render();window.scrollTo({top:0,behavior:'smooth'})}
-function resetHunt(){localStorage.removeItem(KEY);state={screen:'intro',name:'',username:'',tries:0,code:'',word:[],sudoku:{}};render();window.scrollTo({top:0,behavior:'smooth'})}\nhomeLink.onclick=e=>{e.preventDefault();resetHunt()};\nstartOverButton.onclick=()=>{if(!window.confirm('Start from the beginning? Your saved place in the hunt will be cleared.'))return;resetHunt()};
+function resetHunt(){localStorage.removeItem(KEY);state={screen:'intro',name:'',username:'',tries:0,code:'',word:[],sudoku:{}};render();window.scrollTo({top:0,behavior:'smooth'})}
+homeLink.onclick=e=>{e.preventDefault();resetHunt()};
+startOverButton.onclick=()=>{if(!window.confirm('Start from the beginning? Your saved place in the hunt will be cleared.'))return;resetHunt()};
 const FINAL_FILE_DIGEST='fcd22f0899f3ee64f5eeaecf34b8e57073a62decb51957147ce626d4d3059d12';
 const BOOK_MAGIC_DIGEST='3c2ee28babb6d5fa82d08975497facd92dee9efedc07acba0a3b69e6ed4bea4a';
 async function checkFinalPassword(value){try{const bytes=new TextEncoder().encode(value.trim().toLowerCase().replace(/\s+/g,''));const hash=await crypto.subtle.digest('SHA-256',bytes);return [...new Uint8Array(hash)].map(b=>b.toString(16).padStart(2,'0')).join('')===FINAL_FILE_DIGEST}catch{return false}}
