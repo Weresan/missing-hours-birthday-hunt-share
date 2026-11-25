@@ -154,3 +154,6 @@ footer{border-top:0;background:#f8d5ee;color:#684d58}
 .sidequest-note p{margin:0 0 12px}
 .sidequest-note p:last-child{margin-bottom:0}
 @media(max-width:560px){.choice-grid{flex-direction:column}.choice-grid .button{width:100%;flex:1 1 auto}}
+
+/* Make the given Sudoku numbers easy to read against the pale cells. */
+.sudoku.six .cell.given{color:#51382c;background:#f4dfd2;font-weight:700;text-shadow:none}
